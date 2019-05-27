@@ -2,7 +2,7 @@
 //  CurrencyListViewController.swift
 //  CurrencyExchange
 //
-//  Created by UTS on 2019/5/16.
+//  Created by UTS oon 2019/5/24.
 //  Copyright © 2019 apple. All rights reserved.
 //
 
@@ -11,18 +11,16 @@ import CoreLocation
 
 typealias CurrencySelectedBlock = (_ currency:Currency) -> ()
 var countrys:[String:String] = [
-                //Chinese system
                 "中国":"CNY",
                 "澳大利亚":"AUD",
                 "美国":"USD",
                 "香港":"HKD",
-                "欧盟":"Euro",
+                "法国":"Euro",
                 "新西兰":"NZD",
                 "日本":"JPY",
                 "加拿大":"CAD",
                 "新加坡":"SGD",
                 "英国":"GBP",
-                //English system
                 "China":"CNY",
                 "Australia":"AUD",
                 "America":"USD",
@@ -59,14 +57,15 @@ class CurrencyListViewController: UIViewController,UITableViewDelegate,UITableVi
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let geocoder: CLGeocoder = CLGeocoder()
         let currLocation = locations.last
-        
-        geocoder.reverseGeocodeLocation(currLocation!, preferredLocale: nil) { (placemark:[CLPlacemark]?, error) in
+        geocoder.reverseGeocodeLocation(currLocation!) { (placemark:[CLPlacemark]?, error) in
             if (error == nil) {
                 let mark = placemark?.last
                 let country: String = mark?.addressDictionary!["Country"]! as! String
-                self.localCountry = countrys[country]!
-                self.tableView.reloadData()
                 print("%@",country)
+                if let country = countrys[country] {
+                    self.localCountry = country
+                    self.tableView.reloadData()
+                }
                 self.locationManager.stopUpdatingLocation()
             }
         }
