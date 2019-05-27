@@ -3,7 +3,7 @@
 Our project is a currency exchanger which supports 10 countries' dollar: AUD, CNY, HKD, USD, EUR, NZD, JPY, CAD, SGD, GBP
 The functions are:
 - convert currency
-- check currency history
+- check currency history （It has to choose the countries first, then choose a date, so you can view the history currency, otherwise it will be 0.0)
 - GPS location based on where you are, and automatically help you to choose currency
 - Personal account (currently having trouble with the live database)
 
