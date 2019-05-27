@@ -11,6 +11,7 @@ import CoreLocation
 
 typealias CurrencySelectedBlock = (_ currency:Currency) -> ()
 var countrys:[String:String] = [
+                //Chinese system
                 "中国":"CNY",
                 "澳大利亚":"AUD",
                 "美国":"USD",
@@ -21,6 +22,17 @@ var countrys:[String:String] = [
                 "加拿大":"CAD",
                 "新加坡":"SGD",
                 "英国":"GBP",
+                //English system
+                "China":"CNY",
+                "Australia":"AUD",
+                "America":"USD",
+                "Hong Kong":"HKD",
+                "France":"Euro",
+                "New Zealand":"NZD",
+                "Japan":"JPY",
+                "Canada":"CAD",
+                "Singapore":"SGD",
+                "Britain":"GBP",
 
 ]
 class CurrencyListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate {
@@ -49,7 +61,7 @@ class CurrencyListViewController: UIViewController,UITableViewDelegate,UITableVi
         let currLocation = locations.last
         
         geocoder.reverseGeocodeLocation(currLocation!, preferredLocale: nil) { (placemark:[CLPlacemark]?, error) in
-            if (error == nil) {//转换成功，解析获取到的各个信息
+            if (error == nil) {
                 let mark = placemark?.last
                 let country: String = mark?.addressDictionary!["Country"]! as! String
                 self.localCountry = countrys[country]!
@@ -63,7 +75,7 @@ class CurrencyListViewController: UIViewController,UITableViewDelegate,UITableVi
     func initData() -> Void {
         let currency1 = Currency.createCurrency(name: "AUD", image: "australia", fullName: "Australian Dollar")
         let currency2 = Currency.createCurrency(name: "USD", image: "united-states-of-america", fullName: "American Dollar")
-        let currency3 = Currency.createCurrency(name: "CNY", image: "china", fullName: "chiness Yuan")
+        let currency3 = Currency.createCurrency(name: "CNY", image: "china", fullName: "Chinese Yuan")
         let currency4 = Currency.createCurrency(name: "HKD", image: "hong-kong", fullName: "Hong Kong Dollar")
         let currency5 = Currency.createCurrency(name: "EUR", image: "european-union", fullName: "Euro")
         let currency6 = Currency.createCurrency(name: "NZD", image: "new-zealand", fullName: "New Zealand Dollar")
