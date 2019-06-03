@@ -27,7 +27,7 @@ var countrys:[String:String] = [
                 "Australia":"AUD",
                 "America":"USD",
                 "Hong Kong":"HKD",
-                "France":"Euro",
+                "France":"Euro",  //Euro is the official currency of European Union, but it has to be a country to assign to Euro, so we choose France as the country to assign to Euro.
                 "New Zealand":"NZD",
                 "Japan":"JPY",
                 "Canada":"CAD",
