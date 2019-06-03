@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		195CA9CF6A6CCCAD64F46C85 /* Pods_CurrencyExchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2C82B22ED200FB4BDC0FB /* Pods_CurrencyExchange.framework */; };
+		BC1379BB229ED14F0015C398 /* BuyCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1379BA229ED14F0015C398 /* BuyCurrencyViewController.swift */; };
+		BC1379BD229ED4CB0015C398 /* MoneyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1379BC229ED4CB0015C398 /* MoneyManager.swift */; };
+		BC1379BF229ED73A0015C398 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1379BE229ED73A0015C398 /* RecordModel.swift */; };
+		BC1379C1229ED8B20015C398 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1379C0229ED8B20015C398 /* AccountViewController.swift */; };
+		BC1379C3229ED9C50015C398 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1379C2229ED9C50015C398 /* AccountTableViewCell.swift */; };
 		BCBD2E4F228A8EEB00F4CC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBD2E4E228A8EEB00F4CC89 /* AppDelegate.swift */; };
 		BCBD2E54228A8EEB00F4CC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBD2E52228A8EEB00F4CC89 /* Main.storyboard */; };
 		BCBD2E57228A8EEB00F4CC89 /* CurrencyExchange.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCBD2E55228A8EEB00F4CC89 /* CurrencyExchange.xcdatamodeld */; };
@@ -27,6 +32,11 @@
 		01636F6186004B82AFD3693A /* Pods-CurrencyExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyExchange.debug.xcconfig"; path = "Target Support Files/Pods-CurrencyExchange/Pods-CurrencyExchange.debug.xcconfig"; sourceTree = "<group>"; };
 		891799286A06612CC6D8CD86 /* Pods-CurrencyExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyExchange.release.xcconfig"; path = "Target Support Files/Pods-CurrencyExchange/Pods-CurrencyExchange.release.xcconfig"; sourceTree = "<group>"; };
 		B0D2C82B22ED200FB4BDC0FB /* Pods_CurrencyExchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyExchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1379BA229ED14F0015C398 /* BuyCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCurrencyViewController.swift; sourceTree = "<group>"; };
+		BC1379BC229ED4CB0015C398 /* MoneyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManager.swift; sourceTree = "<group>"; };
+		BC1379BE229ED73A0015C398 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		BC1379C0229ED8B20015C398 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		BC1379C2229ED9C50015C398 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		BCBD2E4B228A8EEB00F4CC89 /* CurrencyExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBD2E4E228A8EEB00F4CC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBD2E53228A8EEB00F4CC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +104,11 @@
 				BCF2104C228E60E600DF5E93 /* UIView+Category.swift */,
 				BCEA08B9229050BC001C4D5A /* HistoryViewController.swift */,
 				BCEA08BB22905285001C4D5A /* DateViewController.swift */,
+				BC1379BA229ED14F0015C398 /* BuyCurrencyViewController.swift */,
+				BC1379C0229ED8B20015C398 /* AccountViewController.swift */,
+				BC1379C2229ED9C50015C398 /* AccountTableViewCell.swift */,
+				BC1379BC229ED4CB0015C398 /* MoneyManager.swift */,
+				BC1379BE229ED73A0015C398 /* RecordModel.swift */,
 				BCEA08B722904533001C4D5A /* Assets.xcassets */,
 				BCBD2E52228A8EEB00F4CC89 /* Main.storyboard */,
 				BCBD2E5A228A8EED00F4CC89 /* LaunchScreen.storyboard */,
@@ -228,8 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEA08BC22905285001C4D5A /* DateViewController.swift in Sources */,
+				BC1379BB229ED14F0015C398 /* BuyCurrencyViewController.swift in Sources */,
+				BC1379C1229ED8B20015C398 /* AccountViewController.swift in Sources */,
+				BC1379C3229ED9C50015C398 /* AccountTableViewCell.swift in Sources */,
 				BCF21049228DB34F00DF5E93 /* Currency.swift in Sources */,
 				BCF2104B228DB3E500DF5E93 /* CurrencyListTableViewCell.swift in Sources */,
+				BC1379BD229ED4CB0015C398 /* MoneyManager.swift in Sources */,
+				BC1379BF229ED73A0015C398 /* RecordModel.swift in Sources */,
 				BCF2104D228E60E600DF5E93 /* UIView+Category.swift in Sources */,
 				BCF21047228DB2E200DF5E93 /* CurrencyListViewController.swift in Sources */,
 				BCBD2E64228A8F3500F4CC89 /* NetworkManager.swift in Sources */,
@@ -393,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CurrencyExchangea;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurrencyExchangebc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -413,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CurrencyExchangea;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CurrencyExchangebc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

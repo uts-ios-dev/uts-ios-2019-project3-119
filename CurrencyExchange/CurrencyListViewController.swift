@@ -2,7 +2,7 @@
 //  CurrencyListViewController.swift
 //  CurrencyExchange
 //
-//  Created by UTS oon 2019/5/24.
+//  Created by UTS on 2019/5/16.
 //  Copyright © 2019 apple. All rights reserved.
 //
 
@@ -11,6 +11,7 @@ import CoreLocation
 
 typealias CurrencySelectedBlock = (_ currency:Currency) -> ()
 var countrys:[String:String] = [
+                //Chinese system
                 "中国":"CNY",
                 "澳大利亚":"AUD",
                 "美国":"USD",
@@ -21,6 +22,7 @@ var countrys:[String:String] = [
                 "加拿大":"CAD",
                 "新加坡":"SGD",
                 "英国":"GBP",
+                //English system
                 "China":"CNY",
                 "Australia":"AUD",
                 "America":"USD",

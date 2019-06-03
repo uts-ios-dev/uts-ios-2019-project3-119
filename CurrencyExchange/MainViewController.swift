@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  CurrencyExchange
 //
-//  Created by UTS on 2019/5/18.
+//  Created by UTS on 2019/5/16.
 //  Copyright © 2019 apple. All rights reserved.
 //
 
@@ -28,7 +28,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tourTextField: UITextField!
     
     @IBOutlet weak var exchangeButton: UIButton!
-
+    @IBOutlet weak var buyCurrencyButton: UIButton!
+    
     var scur:String = "AUD"
     var tcur:String = "CNY"
 
@@ -88,10 +89,15 @@ class MainViewController: UIViewController {
         self.tourTextField.clipsToBounds = true
         self.exchangeButton.frame = CGRect.init(x: (screenWidth - 180) * 0.5, y: self.tourTextField.bottom + 30, width: 180, height: 50)
         
-//        self.exchangeButton.layer.borderWidth = 0.5
         self.exchangeButton.layer.borderColor = UIColor.lightGray.cgColor
         self.exchangeButton.layer.cornerRadius = 5
         self.exchangeButton.clipsToBounds = true
+        
+        self.buyCurrencyButton.frame = CGRect.init(x: (screenWidth - 180) * 0.5, y: self.exchangeButton.bottom + 30, width: 180, height: 50)
+        self.buyCurrencyButton.layer.borderColor = UIColor.lightGray.cgColor
+        self.buyCurrencyButton.layer.cornerRadius = 5
+        self.buyCurrencyButton.clipsToBounds = true
+        
     }
     @IBAction func scurButtonClick(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "CurrencyListViewController") as! CurrencyListViewController
@@ -128,4 +134,10 @@ class MainViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func buyCurrencyClick(_ sender: Any) {
+        
+    }
+    
+    
 }
