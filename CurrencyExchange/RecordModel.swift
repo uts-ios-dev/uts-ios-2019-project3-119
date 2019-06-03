@@ -2,7 +2,7 @@
 //  RecordModel.swift
 //  CurrencyExchange
 //
-//  Created by Cao,Xiangzhao on 2019/5/29.
+//  Created by UTS on 2019/5/29.
 //  Copyright © 2019 apple. All rights reserved.
 //
 
