@@ -54,7 +54,7 @@ class HistoryViewController: UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "CurrencyListViewController") as! CurrencyListViewController
         vc.selectedBlock = { currency in
             self.tour = currency.name
-            self.tourLabel.text = self.scur
+            self.tourLabel.text = self.tour
             self.tourFullNameLabel.text = currency.fullName
             self.tourIcon.image = UIImage.init(named: currency.image)
         }
